@@ -27,8 +27,8 @@ body {
 	display: none;
 	width: 250px;
 	height: 250px;
-	margin-top: -50px;
-	 object-fit: cover;
+	
+	object-fit: cover;
 	clip-path: circle(50%);
 }
 
