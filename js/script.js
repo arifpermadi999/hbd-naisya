@@ -131,7 +131,7 @@ const store = {
 					? '1.2' // Profile header default (doesn't need to be an int)
 					: '2', // Mobile default
 			autoLaunch: true,
-			finale: false,
+			finale: true,
 			skyLighting: SKY_LIGHT_NORMAL + '',
 			hideControls: IS_HEADER,
 			longExposure: false,
@@ -2295,7 +2295,8 @@ if (IS_HEADER) {
 // Function to handle the user gesture for sound.
 function startSoundWithUserGesture() {
     // 1. Set the internal state to soundEnabled: true
-    store.setState({ soundEnabled: true });
+    store.setState({ soundEnabled: true,finale: true });
+	
 
     // 2. Explicitly resume the AudioContext on user gesture
     if (soundManager.ctx.state === 'suspended' || soundManager.ctx.state === 'interrupted') {
