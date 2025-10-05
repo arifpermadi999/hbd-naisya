@@ -227,7 +227,7 @@ $('document').ready(function(){
 		var end = 10;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(1000).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(2000).promise().done(function(){
 			i=i+1;
 			
 			$("#photo-"+i).fadeIn('slow').delay(4000);
