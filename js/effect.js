@@ -37,9 +37,9 @@ $('document').ready(function(){
 	}
 	function setStory(){
 		setTimeout(function() {
-			$('.balloons').fadeOut('fast');
-			$('.message-cake').fadeOut('fast');
-			$('.bannar').fadeOut('fast');
+			$('.balloons').fadeOut('fast').delay(1000);
+			$('.message-cake').fadeOut('fast').delay(1000);
+			$('.bannar').fadeOut('fast').delay(1000);
 			story();
 		}, 2000); // 2000 ms = 2 seconds
 	}
@@ -219,7 +219,7 @@ $('document').ready(function(){
 	};
 	
 	function story(){
-		$('.cake').fadeOut('fast').promise().done(function(){
+		$('.cake').fadeOut('fast').delay(1000).promise().done(function(){
 			$('.message').fadeIn('slow');
 		});
 		
