@@ -18,7 +18,7 @@ body {
 #wrap-photo{
 	position: absolute;
 	z-index: 77; 
-	left: 50%; 
+	left: 55%; 
 	transform: translateX(-50%); 
 	top: 60px;
 	
