@@ -224,21 +224,15 @@ $('document').ready(function(){
 		});
 		
 		var i;
-		var end = 36;
+		var end = 10;
 
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(1000).promise().done(function(){
 			i=i+1;
 			
-			if ([1, 3, 6, 10, 14, 21, 29, 30, 31, 36, end].includes(i)){
-				$("#photo-"+i).fadeIn('slow').delay(4000);
-				$("p:nth-child("+i+")").fadeIn('slow').delay(4000);
-				$("#photo-"+i).fadeOut('slow').delay(4000);
-			}else if ([4, 5, end].includes(i)){
-				$("p:nth-child("+i+")").fadeIn('slow').delay(4000);
-			}else{
-				$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			}
+			$("#photo-"+i).fadeIn('slow').delay(4000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(4000);
+			$("#photo-"+i).fadeOut('slow').delay(4000);
 			
 			
 			if(i==end){
