@@ -231,14 +231,20 @@ $('document').ready(function(){
 			$("p:nth-child("+i+")").fadeOut('slow').delay(1000).promise().done(function(){
 			i=i+1;
 			
-			if ([1, 4, 5, 6, 10, 21, end].includes(i)){
+			// if ([1, 4, 5, 6, 10, 21, end].includes(i)){
+			// 	$("#photo-"+i).fadeIn('slow').delay(4000);
+			// 	$("p:nth-child("+i+")").fadeIn('slow').delay(4000);
+			// 	$("#photo-"+i).fadeOut('slow').delay(4000);
+			// }else{
+			// 	$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+			// }
+			if ([4, 5, end].includes(i)){
 				$("#photo-"+i).fadeIn('slow').delay(4000);
 				$("p:nth-child("+i+")").fadeIn('slow').delay(4000);
 				$("#photo-"+i).fadeOut('slow').delay(4000);
 			}else{
 				$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			}
-			
 			
 			if(i==end){
 				$(`p:nth-child(${end})`).fadeOut('slow').promise().done(function () {
