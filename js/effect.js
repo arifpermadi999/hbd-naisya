@@ -241,6 +241,8 @@ $('document').ready(function(){
 					$('#firework').fadeIn('fast');
 					blinkAnimation();
 					startSoundWithUserGesture();
+					
+					
 				});
 				
 			}
